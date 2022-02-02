@@ -6,7 +6,8 @@ html {
     font-size: calc(7px + 1vw); } }
 body {
   height: 100vh;
-  position: relative; }
+  position: relative;
+  overflow-y: hidden; }
   body .hidden {
     display: none; }
   body .scrollable {

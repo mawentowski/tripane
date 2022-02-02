@@ -14,7 +14,7 @@ body {
     height: 100vh;
     // body is scrollable by right nav so must be relative.
     position: relative;
-    // overflow-y: hidden;
+    overflow-y: hidden;
     .hidden {
         display: none;
     }
