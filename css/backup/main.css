@@ -1,0 +1,195 @@
+/* 
+@keyframes expand-frames {
+    0% {
+        height: 0;
+       
+    }
+    100% {
+        height: fit-content;
+        
+    }
+} */
+
+/* @keyframes collapse-frames {
+    0% {
+        height: fit-content;
+       
+    }
+    100% {
+        height: 0;
+        
+    }
+} */
+
+html {
+    font-size: calc(5px + 1vw);
+}
+
+
+body {
+    margin:0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+
+}
+
+
+.top-bar-container {
+    display:flex;
+    flex-direction: row;
+    padding-right: 5rem;
+    padding-left: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    width:100%;
+}
+
+.top-bar-items-left {
+    display:flex;
+    flex-direction: row;
+    padding:0.5px;
+  
+}
+.top-bar-items-right {
+    display:flex;
+    flex-direction: row;
+    padding:0.5px;
+    justify-content: flex-end;
+}
+
+.nav-custom {
+    background-color: #772D8B;
+    color: white;
+
+}
+
+
+#top-nav a {
+    text-decoration: none;
+    color:white;
+
+}
+
+.nav-items-right .fa {
+    font-size: 1.2rem;
+}
+
+.nav-items-left .top-bar-item {
+    padding: 0.5rem;
+}
+.nav-items-right .top-bar-item {
+    padding: 0.3rem;
+}
+
+.download-btn {
+    margin-left: 1rem;
+}
+.download-btn a {
+    font-weight: 600;
+    color: #ffe484;
+    border:2px solid #ffe484;
+    text-decoration: none;
+    border-radius: 3px;
+    padding: 10px;
+}
+.download-btn a:active {
+    background-color: #ffe484;
+    color: black;
+}
+
+.filler {
+    padding-top: 14rem;
+}
+
+.main-content {
+    display:flex;
+    width:100%;
+    /* padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs
+    -gutter-x,.75rem);
+    margin-right: auto;
+    margin-left: auto; */
+}
+
+.content-container {
+    flex: 0 0 60%;
+    max-width: 60%;
+    padding: 40px;
+}
+
+.right-nav-container 
+{
+    flex: 0 0 20%;
+    max-width: 20%;
+    padding: 40px;
+}
+
+
+
+
+.left-nav-container {
+    flex: 0 0 20%;
+    max-width: 20%;
+    padding: 40px;
+}
+
+
+.menu-item {
+    padding-left: 15px;
+}
+
+
+.menu-item-group {
+    margin-left: 16px;
+    overflow: hidden;
+}
+
+.menu-item-group:not(.expanded) * {
+    display: none;
+ 
+}
+
+/* .collapsed {
+    animation: collapse-frames 1s;
+}
+
+.expanded {
+    animation: expand-frames 1s;
+} */
+
+
+div.menu-item > span.svg-container > svg {
+    cursor: pointer;
+}
+
+div.menu-item > span.svg-container {
+    width: 10px;
+}
+
+svg.rotated {
+    transform: rotate(90deg);
+}
+
+.name-container {
+    display: flex;
+    align-items: center;
+}
+
+.svg-container {
+    width: 20px;
+}
+
+svg {
+    width: 100%;
+}
+
+svg path:nth-of-type(1){
+    fill: transparent;
+}
+
+svg path:nth-of-type(2){
+    fill: black;
+}
+
+

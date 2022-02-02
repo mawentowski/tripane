@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <!-- <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" type="text/css"> -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Font awesome, web fonts -->
+    <link href="font-awesome/css/brands.css" rel="stylesheet">
+    <link href="font-awesome/css/fontawesome.css" rel="stylesheet">
+    <link href="font-awesome/css/solid.css" rel="stylesheet">
+    <link href="font-awesome/css/v4-shims.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar scroll</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Link
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Link</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav> -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+      <div class="menu-icon-row">
+        <div>
+          <button class="toc-menu">
+            <span><i class="fa fa-bars"></i></span><span class="toc-menu-label">Table of Contents</span></span>
+          </button>
+      </div>
+      </div>
+
+      
+      <div class="main-row">
+    
+        <div class="left-nav-col hidden" style="background-color: #d3f6db">
+          <div class="toc-header">
+            <div class="toc-header-text">
+              Table of Contents
+            </div>
+            <div class="toc-header-cancel">
+              <i class="fa fa-times"></i>
+            </div>
+          </div>
+          <div class="toc-filter-row">
+            <div class="toc-filter input-group mb-3">
+              <div class="input-group-prepend">
+                  <span class="input-group-text">@</span>
+              </div>
+              <input class="form-control" type="text" placeholder="Filter by Title">
+              </div>
+          </div>
+          <div class="left-nav" style="background-color: #d3f6db">
+          </div>
+          <div class="dl-pdf-row ">
+       
+              <span class="dl-pdf-icon"><i class="fa fa-file-pdf"></i></span><span class="dl-pdf-txt">Download PDF</span>
+          
+          </div>
+        </div>
+
+        <div class="toggled-overlay hidden pos-fixed-bottom-left fit-viewport">
+        </div>
+
+
+
+        <div id="content" class="content scrollable" data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example" style="position:relative;">
+          <div class="main-content">
+            <h4 >Item 1</h4>
+            <p>Ex consequat commodo adipisicing exercitation aute excepteur occaecat ullamco duis aliqua id magna ullamco eu. Do aute ipsum ipsum ullamco cillum consectetur ut et aute consectetur labore. Fugiat laborum incididunt tempor eu consequat enim dolore proident. Qui laborum do non excepteur nulla magna eiusmod consectetur in. Aliqua et aliqua officia quis et incididunt voluptate non anim reprehenderit adipisicing dolore ut consequat deserunt mollit dolore. Aliquip nulla enim veniam non fugiat id cupidatat nulla elit cupidatat commodo velit ut eiusmod cupidatat elit dolore.</p>
+            <h5 id="item-1">Item 1-1</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nisi ea illo! Vel aliquid odit ipsa, alias, voluptates corrupti dolore rem, explicabo soluta quae dolorum vero architecto quia fugiat? Eius!
+            Corrupti ullam quaerat aliquid eum est, nihil excepturi neque atque officia corporis perferendis error sequi ipsum, molestias blanditiis natus quam. Itaque accusamus voluptates praesentium earum magnam aperiam architecto sint! Corporis?Amet tempor mollit aliquip pariatur excepteur commodo do ea cillum commodo Lorem et occaecat elit qui et. Aliquip labore ex ex esse voluptate occaecat Lorem ullamco deserunt. Aliqua cillum excepteur irure consequat id quis ea. Sit proident ullamco aute magna pariatur nostrud labore. Reprehenderit aliqua commodo eiusmod aliquip est do duis amet proident magna consectetur consequat eu commodo fugiat non quis. Enim aliquip exercitation ullamco adipisicing voluptate excepteur minim exercitation minim minim commodo adipisicing exercitation officia nisi adipisicing. Anim id duis qui consequat labore adipisicing sint dolor elit cillum anim et fugiat.</p>
+            <h5 id="item-1-1">Item 1-2</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos obcaecati eveniet, porro a ipsum voluptatem voluptates placeat aut molestiae praesentium omnis, iure doloribus cum itaque repudiandae, ipsa inventore exercitationem. Accusantium.
+            Dolor sunt cupiditate aliquam optio reprehenderit quisquam nostrum deserunt molestias reiciendis ipsa doloribus aliquid dolore veritatis illo odio, est labore adipisci. Sequi eum labore iusto temporibus ducimus nostrum vitae quidem.Cillum nisi deserunt magna eiusmod qui eiusmod velit voluptate pariatur laborum sunt enim. Irure laboris mollit consequat incididunt sint et culpa culpa incididunt adipisicing magna magna occaecat. Nulla ipsum cillum eiusmod sint elit excepteur ea labore enim consectetur in labore anim. Proident ullamco ipsum esse elit ut Lorem eiusmod dolor et eiusmod. Anim occaecat nulla in non consequat eiusmod velit incididunt.</p>
+            <h4 id="item-1-2">Item 2</h4>
+            <p>Quis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nulla tempor. Laborum consequat non elit enim exercitation cillum aliqua consequat id aliqua. Esse ex consectetur mollit voluptate est in duis laboris ad sit ipsum anim Lorem. Incididunt veniam velit elit elit veniam Lorem aliqua quis ullamco deserunt sit enim elit aliqua esse irure. Laborum nisi sit est tempor laborum mollit labore officia laborum excepteur commodo non commodo dolor excepteur commodo. Ipsum fugiat ex est consectetur ipsum commodo tempor sunt in proident.</p>
+            <h4 id="item-2">Item 3</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam architecto numquam iure distinctio similique cum atque deserunt accusamus qui voluptatibus corrupti totam quisquam, praesentium quia doloribus illum modi repellat accusantium.
+            Assumenda autem ipsa ratione, nisi rem aliquid beatae molestias. Deserunt hic amet, officia ducimus porro quia libero temporibus dignissimos labore suscipit, iusto perspiciatis consequuntur, ab odio. Accusantium neque nihil doloremque.
+            Facere nam et veniam fuga hic, alias quae sunt quidem fugit cupiditate nihil dolorum nobis. Porro rerum nihil ut facilis blanditiis expedita adipisci odio! Voluptatem animi reiciendis dicta suscipit expedita!Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.</p>
+            <h5 id="item-2-1">Item 3-1</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat id rem quas, aliquam beatae excepturi quisquam? Dolorum sit voluptas magnam velit quo aliquid soluta est ea possimus, temporibus omnis ducimus.
+            Quod voluptatibus, culpa delectus maxime aperiam inventore facere quidem voluptatum molestiae aut esse expedita perferendis vero recusandae necessitatibus cumque numquam sunt, laborum ratione neque sapiente corporis voluptatem tempore. Nihil, quod?
+            Aperiam consectetur vero nemo odio animi necessitatibus, ipsum possimus, est debitis consequatur incidunt eaque quos veniam recusandae unde molestias earum sint minus similique culpa nihil voluptate officiis itaque. Vel, possimus!
+            Vitae totam dolor hic mollitia reiciendis ullam ad ipsa quibusdam et modi, nam odit natus consequatur magnam id quia tenetur est dolorum accusamus. Qui expedita eius animi ipsam in dolore!
+            Debitis quaerat ipsam quos vel ab, ducimus harum earum sequi dolor rem ipsum deserunt facere tempora, voluptatum amet ullam culpa molestiae expedita voluptatem consequuntur fuga error! Suscipit rem nulla facilis!Deserunt quis elit Lorem eiusmod amet enim enim amet minim Lorem proident nostrud. Ea id dolore anim exercitation aute fugiat labore voluptate cillum do laboris labore. Ex velit exercitation nisi enim labore reprehenderit labore nostrud ut ut. Esse officia sunt duis aliquip ullamco tempor eiusmod deserunt irure nostrud irure. Ullamco proident veniam laboris ea consectetur magna sunt ex exercitation aliquip minim enim culpa occaecat exercitation. Est tempor excepteur aliquip laborum consequat do deserunt laborum esse eiusmod irure proident ipsum esse qui.</p>
+            <h5 id="item-3">Item 3-2</h5>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus autem voluptatibus quaerat reprehenderit, sit tempore nulla iusto in unde odit commodi eum voluptas accusantium. Possimus dolor dicta blanditiis voluptatum voluptatem!
+            Quibusdam animi autem ab sint ratione? Aut incidunt doloribus soluta voluptates eaque sequi tenetur commodi, minus vel quae harum accusantium dolorem animi qui maxime iusto expedita consequatur autem amet non.
+            Maxime suscipit, illo culpa repellat veritatis velit eligendi, illum aspernatur hic facilis quidem enim saepe magni accusantium et cupiditate. Nemo deleniti, soluta libero voluptatem recusandae incidunt iste officia a tempore!
+            Illum molestiae quidem libero veritatis, incidunt nisi corporis earum qui perferendis, est asperiores cum esse odit iusto exercitationem vel sint! Ipsa asperiores tempore dicta molestiae mollitia possimus atque harum ipsam?
+            Maiores, eos a officia consequuntur facere ipsa nesciunt nam porro commodi, praesentium iusto voluptatem rem quisquam. Architecto quasi veniam, amet reprehenderit quis adipisci optio quod ratione, non dignissimos corrupti vitae?Labore sit culpa commodo elit adipisicing sit aliquip elit proident voluptate minim mollit nostrud aute reprehenderit do. Mollit excepteur eu Lorem ipsum anim commodo sint labore Lorem in exercitation velit incididunt. Occaecat consectetur nisi in occaecat proident minim enim sunt reprehenderit exercitation cupidatat et do officia. Aliquip consequat ad labore labore mollit ut amet. Sit pariatur tempor proident in veniam culpa aliqua excepteur elit magna fugiat eiusmod amet officia.</p>
+          </div>
+          <!-- <div class="right-nav-col" style="background-color: #a1ef8b;">
+            <nav id="navbar-example3" class="navbar flex-column" style="background-color: #EBCFB2">
+  
+              <a class="navbar-brand" href="#">Navbar</a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link active" href="#item-1">Item 1</a>
+                <nav class="nav nav-pills flex-column">
+                  <a class="nav-link ml-3 my-1" href="#item-1-1">Item 1-1</a>
+                  <a class="nav-link ml-3 my-1" href="#item-1-2">Item 1-2</a>
+                </nav>
+                <a class="nav-link" href="#item-2">Item 2</a>
+                <a class="nav-link" href="#item-3">Item 3</a>
+                <nav class="nav nav-pills flex-column">
+                  <a class="nav-link ml-3 my-1" href="#item-3-1">Item 3-1</a>
+                  <a class="nav-link ml-3 my-1" href="#item-3-2">Item 3-2</a>
+                </nav>
+              </nav>
+            </nav>
+          </div> -->
+          <!-- you want body to have overflow-y: hidden and when you click the link you dont want
+          it to do a y-scroll that you cannot move back up -->
+          <div class="right-nav-col">
+            <div id="list-example" class="list-group">
+              <a class="list-group-item list-group-item-actionli" href="#item-1">Item 1</a>
+              <a class="list-group-item list-group-item-action" href="#item-1-1">Item 1-1</a>
+              <a class="list-group-item list-group-item-action" href="#item-1-2">Item 1-2</a>
+              <a class="list-group-item list-group-item-action" href="#item-2">Item 2</a>
+            </div>
+          </div>
+
+
+
+
+        </div>
+      </div>
+  
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- My javascript files -->
+    <script src="js/generate-left-nav.js" type="module"></script>
+    <script src="js/toggle-toc.js"></script>
+    <script src="js/add-remove-classes.js"></script>
+
+  </body>
+</html>
