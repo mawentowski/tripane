@@ -1,4 +1,4 @@
-const tocMenuButton = globalThis.document.querySelector("button.toc-menu");
+const tocMenuButton = globalThis.document.querySelector(".toc-menu");
 const leftNavCol = globalThis.document.querySelector(".left-nav-col");
 const content = globalThis.document.querySelector(".content");
 const rightOverlayCol = globalThis.document.querySelector(".toggled-overlay");

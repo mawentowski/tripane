@@ -43,14 +43,22 @@ picture {
 }
 
 /* Inherit fonts for inputs and buttons */
-input,
+button,
+a
+{
+  font: inherit;
+}
+
+/* input,
 button,
 textarea,
 a,
 select 
 {
   font: inherit;
-}
+} */
+
+
 a {
     text-decoration: none;
 }

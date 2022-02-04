@@ -67,19 +67,18 @@ body {
                     a.create-account:hover {
                         color: inherit;
                     }
-                    a.sign-in {
-                        color: inherit;
-                        padding-right: 8px;
-                        padding-left: 8px;
-                        padding-top: 4px;
-                        padding-bottom: 4px;
-                        border-radius: 4px;
-                        background-color: white;
-                        border: 0.2px solid #dddddd;
-                    }   
-                    a.sign-in:hover {
-                        box-shadow: 0.5px 0.5px 0.5px 0.1em #dddddd;
-                    } 
+                    form {
+                        button {
+                            color: inherit;
+                            padding-right: 8px;
+                            padding-left: 8px;
+                            padding-top: 4px;
+                            padding-bottom: 4px;
+                            border-radius: 4px;
+                            background-color: white;
+                            border: 0.2px solid #dddddd;
+                        }
+                    }
                 }    
             }
         }
@@ -106,18 +105,18 @@ body {
             }
             .apis-support {
                 display: flex;
-                align-items: center;
                 margin-left: auto;
                 font-weight: 500;
                 line-height: 20px;
                 font-size: 15px;
+                padding-top: 13px;
                 .apids-dropdown {
                     margin-right: 30px;
                     form {
-                        // display: flex;
-                        // flex-direction: column;
+                        label {
+                            margin-right: 7px;
+                        }
                     }
-
                 }
                 .support-btn {
 
@@ -133,16 +132,22 @@ body {
     .menu-icon-row {
         display:flex;
         max-width:100vw;
-        padding: 15px 15px 20px 15px;
+        padding: 22px 25px 22px 25px;
+        background-color: #F7FAFC;
+        color: #3C4257;
+        font-weight: 500;
+        line-height: 20px;
+        font-size: 15px;
+    
         .toc-menu {
             border-radius: 4px;
-            padding: 5px 10px;
-            border: 2px solid black;
+        
+           
             i.fa.fa-bars {
                 display: inline-block;
             }
             .toc-menu-label {
-                margin-left: 5px
+                margin-left: 10px;
             }
         }
     }
@@ -165,13 +170,19 @@ body {
             
             .toc-header {
                 max-width: 100%;
+                display: flex;
+                padding: 22px 25px 22px 25px;
+                background-color: #F7FAFC;
+                color: #3C4257;
+                font-weight: 500;
+                line-height: 20px;
+                font-size: 15px;
+            
                 .toc-header-text {
-                    padding: 20px 20px 20px 0px;
+                    
                 }
                 .toc-header-cancel {
                     margin-left: auto;
-                    padding: 20px 0px 20px 20px;
-             
                     width: 10%;
                     text-align: center;
                 }
@@ -179,8 +190,9 @@ body {
 
             .toc-filter-row {
                 display: flex;
-                padding: 15px;
-                padding-left: 0;
+                padding-right:25px;
+                padding-left: 25px;
+                margin-top: 20px;
                 input.search-field {
                     font-family: inherit;
                     flex-grow: 1;
@@ -194,7 +206,9 @@ body {
                 }
             }
             .left-nav {
-                
+                padding-left: 14px;
+                padding-right: 25px;
+                padding-top: 20px;
                 // Javascripts inserts here
                 > div {
                     padding: 4px;
@@ -237,13 +251,14 @@ body {
             .dl-pdf-row {
                 position: fixed;
                 bottom: 0;
+                padding: 25px;
                 .dl-pdf-icon {
                     .fa.fa-file-pdf {
                         display:inline-block;
                     }
                 }
                 .dl-pdf-txt {
-                    margin-left: 3px;
+                    margin-left: 10px;
                 }
             }
         }
@@ -257,9 +272,9 @@ body {
         @media (min-width: 768px) {
             // The hidden class is removed, if there, then display set to Flex.
             .left-nav-col {
-                flex-basis: 35%;
-                max-width: 35%;
-                padding-top: 20px;
+                flex-basis: 25%;
+                max-width: 25%;
+                
                 .toc-header, .toc-header *, .toc-filter-row, .toc-filter-row *, .dl-pdf-row, .dl-pdf-row *{
                     display: none;
                 }
@@ -267,16 +282,16 @@ body {
         }
         @media (max-width: 767px) {
             .left-nav-col {
-                padding: 20px;
+                
                 .left-nav {
-                    margin-top: 10px;
+                    
                 }
             }
         }
         @media (min-width: 992px) {
             .left-nav-col {
-                flex: 0 0 25%;
-                max-width: 25%;
+                flex: 0 0 20%;
+                max-width: 20%;
                 // padding-top: 25px;
             }
         }
@@ -292,6 +307,8 @@ body {
             padding-top: 20px;
             overflow-y: scroll;
             position:relative;
+            padding-left: 48px;
+            padding-right: 48px;
             h4#item-1 {
                 
             }
@@ -303,23 +320,36 @@ body {
                 height: 100vh;
             }
         }
+
+        @media (max-width: 767px) {
+            .content {
+                padding-left: 25px;
+                padding-right: 25px;
+            }
+        }
         @media (min-width: 768px) {
             .content {
-                flex: 0 0 65%;
-                max-width: 65%;  
+                flex: 0 0 75%;
+                max-width: 75%;  
+                padding-left: 48px;
+                padding-right: 48px;
             }
         }
         @media (min-width: 992px) {
             .content {
-                flex: 0 0 75%;
-                max-width: 75%;  
+                flex: 0 0 80%;
+                max-width: 80%; 
+
+                 
                 .main-content {
-                    flex: 0 0 70%;
-                    max-width: 70%;  
+                    flex: 0 0 75%;
+                    max-width: 75%;  
+                    
                 }
                 .right-nav-col {
-                    flex: 0 0 30%;
-                    max-width: 30%;
+                    flex: 0 0 25%;
+                    max-width: 25%;
+                    padding-left: 48px;
                     
                 }
             }
@@ -330,25 +360,43 @@ body {
             top: 0;
             z-index: 1020;
             height: 100vh;
-            padding: 0px 30px 0px 30px;
+            
+
 
             font-weight: 500;
             line-height: 20px;
             font-size: 15px;
             .pre-right-nav {
                 color: #3C4257;
+                text-transform: uppercase;
+                padding-bottom: 16px;
+                white-space: normal;
+                line-height: 20px;
+                font-weight: 500;
             }
             .right-nav {
                 display: flex;
                 flex-direction: column;
+                .list-group-item {
+                    border: none !important;
+                }
+                .list-group-item.active {
+                    color: #5469d4 !important;
+                    background-color: transparent !important;
+                    border-color: transparent !important;
+                }
+                .list-group-item-action:focus, .list-group-item-action:hover {
+                    color: #697386;
+                    background-color: transparent !important;
+                }
 
                 a.right-nav-link {
                     color: #697386;
                     padding: 4px;
                 }
-                a.right-nav-link:nth-of-type(1) {
-                    color: #694386;
-                }
+                // a.right-nav-link:nth-of-type(1) {
+                //     color: #694386;
+                // }
             }
         }
     }

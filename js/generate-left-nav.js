@@ -57,19 +57,20 @@ function toggleMenuItemGroupCollapsed(menuItemGroupElement) {
 }
 
 const menuItemModels = [
-  new MenuItemModel("Heading X"),
+  new MenuItemModel("Topic-Heading-1"),
   new MenuItemModel(
-    "Heading 2",
-    new MenuItemModel("Subheading"),
-    new MenuItemModel("Subheading"),
-    new MenuItemModel("Subheading")
+    "Topic-Heading-2",
+    new MenuItemModel("Topic-1"),
+    new MenuItemModel("Topic-2"),
+    new MenuItemModel("Topic-3")
   ),
   new MenuItemModel(
-    "Heading 3",
+    "Topic-Heading-3",
     new MenuItemModel(
-      "Subheading",
-      new MenuItemModel("Subsubheading"),
-      new MenuItemModel("Subsubheading")
+      "Sub-topic",
+      new MenuItemModel("Topic-1"),
+      new MenuItemModel("Topic-2"),
+      new MenuItemModel("Topic-3")
     )
   ),
 ];
