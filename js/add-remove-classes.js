@@ -7,22 +7,28 @@ jQuery(document).ready(function($) {
       $('.left-nav-col').removeClass('fit-viewport');
     };
     if (ww <= 767) {
+      $('.header').addClass('hidden');
       $('.left-nav-col').addClass('pos-fixed-top-left');
       $('.left-nav-col').addClass('hidden');
       $('.toc-header').addClass('display-flex');
+      $('.header').removeClass('display-flex');
       $('.left-nav-col').removeClass('display-flex');
       $('.left-nav-col').removeClass('pos-sticky');
     } else if (ww >= 768) {
+      $('.header').removeClass('hidden');
       $('.left-nav-col').removeClass('pos-fixed-top-left');
       $('.left-nav-col').removeClass('hidden');
       $('.toc-header').removeClass('display-flex');
+      $('.header').addClass('display-flex');
       $('.left-nav-col').addClass('display-flex');
       $('.left-nav-col').addClass('pos-sticky');
     };
     if (ww <= 991) {
       $('.right-nav-col').addClass('hidden');
+      $('.right-nav-col').removeClass('display-flex');
     } else if (ww >= 992) {
       $('.right-nav-col').removeClass('hidden');
+      $('.right-nav-col').addClass('display-flex');
     };
   };
   $(window).resize(function(){

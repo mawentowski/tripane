@@ -1,9 +1,7 @@
 html {
-    // font-family: 'Poppins', sans-serif !important;
     font-size: 16px;
-    // Below removes outermost scrollbar. Content div scroll re
     // overflow-y: hidden;
-    
+    font-family: -apple-system , BlinkMacSystemFont , "Segoe UI" , "Roboto" , "Helvetica Neue" , "Ubuntu" , sans-serif;
 }
 @media (max-width: 575px) {
     html {
@@ -11,40 +9,125 @@ html {
     }
 }
 body {
-    height: 100vh;
-    // body is scrollable by right nav so must be relative.
     position: relative;
-    // overflow-y: hidden;
-    .hidden {
-        display: none;
-    }
-    .scrollable {
-        overflow-y: scroll;
+    .header {
+        width: 100%;
+        background-color: #f7fafc;
+        flex-direction: column;
+        padding-left: 2%;
+        padding-right: 2%;
+        padding-top: 20px;
+        border-bottom: 0.1px solid #dddddd;
+        .header-top {
+            display: flex;
+            width: 100%;
+            margin-bottom: 20px;
+            .logo-search-col {
+                flex-basis: 50%;
+                display: flex;
+                align-items: center;
+                .logo-holder {
+                    svg:nth-of-type(2) {
+                        box-sizing: content-box;
+                        padding: 3.3px 0px 3.3px 2px;
+                    }
+                }
+                input.search-field {
+                    font-family: inherit;
+                    margin-left: 15px;
+                    padding: 8px 12px;
+                    flex-grow: 1;
+                    max-width: 500px;
+                    opacity: 0.8;
+                    border-radius: 5px;
+                    border: 1px solid rgba(84, 105, 212, 0.5);
+                    font-weight: 490;
+                    line-height: 20px;
+                    font-size: 15px;
+                }
+            }
+            
+            .account-col {
+                flex-basis: 50%;
+                display: flex;
+                font-weight: 500;
+                line-height: 20px;
+                font-size: 15px;
+                .account-col-content {
+                    margin-left: auto;
+                    display: flex;
+                    align-items: center;
+                    font-weight: 500;
+                    line-height: 20px;
+                    font-size: 15px;
+                    a.create-account {
+                        color: #5469d4;
+                        margin-right: 30px;
+                    }
+                    a.create-account:hover {
+                        color: inherit;
+                    }
+                    a.sign-in {
+                        color: inherit;
+                        padding-right: 8px;
+                        padding-left: 8px;
+                        padding-top: 4px;
+                        padding-bottom: 4px;
+                        border-radius: 4px;
+                        background-color: white;
+                        border: 0.2px solid #dddddd;
+                    }   
+                    a.sign-in:hover {
+                        box-shadow: 0.5px 0.5px 0.5px 0.1em #dddddd;
+                    } 
+                }    
+            }
+        }
+        .header-bottom {
+            width: 100%;
+            display: flex;
+            .content-tabs {
+                display: flex;
+                flex-grow: 1;
+                .tab {
+                    color: #3c4257;
+                    padding: 10px 0px 10px;
+                    border: 2px solid transparent;
+                    background: transparent;
+                    margin-right: 20px;
+                    font-weight: 500;
+                    line-height: 20px;
+                    font-size: 15px;
+                }
+                .tab:nth-of-type(4) {
+                    color: #5469d4;
+                    border-bottom: 2px solid #5469d4;
+                }
+            }
+            .apis-support {
+                display: flex;
+                align-items: center;
+                margin-left: auto;
+                font-weight: 500;
+                line-height: 20px;
+                font-size: 15px;
+                .apids-dropdown {
+                    margin-right: 30px;
+                    form {
+                        // display: flex;
+                        // flex-direction: column;
+                    }
+
+                }
+                .support-btn {
+
+                }
+            }
+
+        }
     }
 
-    .pos-sticky {
-        position: sticky;
-        top: 0;
-    }
-    .pos-fixed {
-        position: fixed;
-    }
-    .pos-fixed-top-left {
-        position: fixed;
-        top: 0;
-        left: 0;
-    }
-    .pos-fixed-bottom-left {
-        position: fixed;
-        bottom: 0;
-    }
-    .display-flex {
-        display: flex;
-    }
-    .fit-viewport {
-        height: 100vh;
-        width: 100vw;
-    }
+
 
     // Row containing ToC Button at xs/sm brkp
     .menu-icon-row {
@@ -70,39 +153,52 @@ body {
     }
     .main-row {
         display: flex;
+        
         .left-nav-col {
             z-index: 2000;
+            border-right: 0.1px solid #dddddd;
+            line-height: 20px;
+            font-size: 15px;
+            font-weight: 500;
+            background-color: white;
+            
+            
             .toc-header {
                 max-width: 100%;
-                border-bottom: 1px solid black;
                 .toc-header-text {
-                    flex: 0 0 90%;
-                    max-width: 90%;  
-                    padding: 20px;
+                    padding: 20px 20px 20px 0px;
                 }
                 .toc-header-cancel {
-                    flex: 0 0 10%;
-                    max-width: 10%;  
+                    margin-left: auto;
+                    padding: 20px 0px 20px 20px;
+             
+                    width: 10%;
                     text-align: center;
-                    padding-top: 20px;
-                    padding-bottom: 20px;
-                    border-left:1px solid black;
                 }
             }
+
             .toc-filter-row {
-                .toc-filter {
-                    padding: 20px;
-                    border-bottom: 1px solid black;
-                }
-            }
-            .toc-filler-row {
-                .toc-filter {
-                    padding: 20px;
-                    border-bottom: 1px solid black;
+                display: flex;
+                padding: 15px;
+                padding-left: 0;
+                input.search-field {
+                    font-family: inherit;
+                    flex-grow: 1;
+                    opacity: 0.8;
+                    border-radius: 5px;
+                    border: 1px solid rgba(84, 105, 212, 0.5);
+                    font-weight: 490;
+                    line-height: 20px;
+                    font-size: 15px;
+                    padding: 10px;
                 }
             }
             .left-nav {
+                
                 // Javascripts inserts here
+                > div {
+                    padding: 4px;
+                }
                 .name-container {
                     display: flex;
                     align-items: center;
@@ -125,6 +221,13 @@ body {
                 .menu-item-group {
                     margin-left: 16px;
                     // overflow: hidden;
+                    > div {
+                        padding: 4px;
+                        font-weight: 400;
+                    }
+                    .name-container {
+                    }
+
                 }
                 // collapse class empty, just for toggle
                 .menu-item-group:not(.expanded) * {
@@ -148,6 +251,7 @@ body {
             .left-nav-col {
                 width: 400px;
                 height: 100vh;
+                
             }
         }
         @media (min-width: 768px) {
@@ -155,8 +259,17 @@ body {
             .left-nav-col {
                 flex-basis: 35%;
                 max-width: 35%;
+                padding-top: 20px;
                 .toc-header, .toc-header *, .toc-filter-row, .toc-filter-row *, .dl-pdf-row, .dl-pdf-row *{
                     display: none;
+                }
+            }
+        }
+        @media (max-width: 767px) {
+            .left-nav-col {
+                padding: 20px;
+                .left-nav {
+                    margin-top: 10px;
                 }
             }
         }
@@ -164,6 +277,7 @@ body {
             .left-nav-col {
                 flex: 0 0 25%;
                 max-width: 25%;
+                // padding-top: 25px;
             }
         }
         .toggled-overlay {
@@ -175,6 +289,9 @@ body {
         .content {
             // height: fit-content;
             display: flex;
+            padding-top: 20px;
+            overflow-y: scroll;
+            position:relative;
             h4#item-1 {
                 
             }
@@ -208,25 +325,35 @@ body {
             }
         }
         .right-nav-col {
+            flex-direction: column;
             position: sticky;
             top: 0;
             z-index: 1020;
             height: 100vh;
-            nav#navbar-example3.navbar {
-                a.navbar-brand {
+            padding: 0px 30px 0px 30px;
 
-                }
-                nav.nav.nav-pills {
-                    margin-left: 16px;
-                }
-                a.nav-link {
-                        
-                }
+            font-weight: 500;
+            line-height: 20px;
+            font-size: 15px;
+            .pre-right-nav {
+                color: #3C4257;
+            }
+            .right-nav {
+                display: flex;
+                flex-direction: column;
 
+                a.right-nav-link {
+                    color: #697386;
+                    padding: 4px;
+                }
+                a.right-nav-link:nth-of-type(1) {
+                    color: #694386;
+                }
             }
         }
     }
 }
+
 
 
 
