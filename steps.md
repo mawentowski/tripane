@@ -22,6 +22,17 @@ On click tab, apply these classes:
 
 When you click a tab, it should not load the header again.
 
+
+### tab.js
+
+Need an event listener that remembers when a tab is selected and removes the formatting of that tab once another tag is selected.
+
+Right now it applies the classes.
+
+
+
+
+
 ## Left Nav
 
 Currently left nav generates automatically when the page loads and there is only one nav.
@@ -72,6 +83,11 @@ p {
 
 ```
 
+
+
+
+
+
 Javascript added classes for future:
 ```CSS
     .text-color-blue {
@@ -90,8 +106,16 @@ Javascript added classes for future:
     }
 ```
 
+<!-- Watch that hover video for links -->
 
 
+## Nav config
 
+
+The header needs to be position fixed and have a z-index greater
+than the main row.
+
+The main-row needs a position fixed and takes up 100vh
+but has a top that puts it below the header
 
 

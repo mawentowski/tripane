@@ -7,6 +7,8 @@ function representMenuItemModelInDom(menuItemModel, parentElement) {
 
   const nameContainerElement = globalThis.document.createElement("span");
   nameContainerElement.classList.add("name-container");
+  nameContainerElement.classList.add("primary-color");
+  nameContainerElement.classList.add("default-font-properties");
   menuItemElement.appendChild(nameContainerElement);
 
   const nameElement = globalThis.document.createElement("span");

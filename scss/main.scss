@@ -12,6 +12,8 @@ body {
     position: relative;
     .header {
         width: 100%;
+        position: fixed;
+        top: 0;
         background-color: #f7fafc;
         flex-direction: column;
         padding-left: 2%;
@@ -61,12 +63,11 @@ body {
                     line-height: 20px;
                     font-size: 15px;
                     a.create-account {
-                        color: #5469d4;
                         margin-right: 30px;
                     }
-                    a.create-account:hover {
-                        color: inherit;
-                    }
+                    // a.create-account:hover {
+                    //     color: inherit;
+                    // }
                     form {
                         button {
                             color: inherit;
@@ -89,32 +90,35 @@ body {
                 display: flex;
                 flex-grow: 1;
                 .tab {
-                    color: #3c4257;
                     padding: 10px 0px 10px;
                     border: 2px solid transparent;
                     background: transparent;
                     margin-right: 20px;
-                    font-weight: 500;
-                    line-height: 20px;
-                    font-size: 15px;
                 }
-                .tab:nth-of-type(4) {
-                    color: #5469d4;
-                    border-bottom: 2px solid #5469d4;
-                }
+                // .tab:nth-of-type(4) {
+                //     color: #5469d4;
+                //     border-bottom: 2px solid #5469d4;
+                // }
             }
             .apis-support {
                 display: flex;
                 margin-left: auto;
-                font-weight: 500;
-                line-height: 20px;
-                font-size: 15px;
                 padding-top: 13px;
                 .apids-dropdown {
                     margin-right: 30px;
                     form {
                         label {
                             margin-right: 7px;
+                            line-height: 20px;
+                            font-size: 14px;
+                            font-weight: 500;
+                        }
+                        select {
+                            line-height: 20px;
+                            font-size: 14px;
+                            font-weight: 500;
+                            option {
+                            }
                         }
                     }
                 }
@@ -138,11 +142,8 @@ body {
         font-weight: 500;
         line-height: 20px;
         font-size: 15px;
-    
         .toc-menu {
             border-radius: 4px;
-        
-           
             i.fa.fa-bars {
                 display: inline-block;
             }
@@ -158,7 +159,8 @@ body {
     }
     .main-row {
         display: flex;
-        
+        position: fixed;
+        top: 125px;
         .left-nav-col {
             z-index: 2000;
             border-right: 0.1px solid #dddddd;
@@ -216,6 +218,7 @@ body {
                 .name-container {
                     display: flex;
                     align-items: center;
+
                     .svg-container {
                         width: 20px;
                         svg {
@@ -305,7 +308,7 @@ body {
             // height: fit-content;
             display: flex;
             padding-top: 20px;
-            overflow-y: scroll;
+            // overflow-y: scroll;
             position:relative;
             padding-left: 48px;
             padding-right: 48px;

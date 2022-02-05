@@ -1,0 +1,30 @@
+/* Global */
+.primary-color {
+    color: #3C4257;
+}
+.unselected-links {
+    color: #697386;
+    font-weight: 400;
+}
+.border-properties {
+    border: 0.1px solid #dddddd;
+}
+.default-font-properties {
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    white-space:normal;
+}
+
+/* .txt-line-height--20px {
+    line-height: 20px;
+} */
+
+
+/* Tabs */
+.tab-border-bottom-blue {
+    border-bottom: 2px solid #5469d4;
+}
+
+
+
