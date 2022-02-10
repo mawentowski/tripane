@@ -359,24 +359,21 @@ body {
                     max-width: 75%;  
                     
                 }
-                .right-nav-col {
-                    flex: 0 0 25%;
-                    max-width: 25%;
-                    padding-left: 48px;
+                // .right-nav-col {
+                //     flex: 0 0 25%;
+                //     max-width: 25%;
+                //     padding-left: 48px;
                     
-                }
+                // }
             }
         }
         .right-nav-col {
+            position: fixed;
+            right: 20px;
+            top: 160px;
+            width: 17%;
+            padding: 5px;
             flex-direction: column;
-            position: sticky;
-            top: 0;
-            z-index: 1020;
-            height: 100vh;
-            
-
-
-            font-weight: 500;
             line-height: 20px;
             font-size: 15px;
             .pre-right-nav {
