@@ -1,5 +1,5 @@
 # Issues
-## Overflow 
+## Overflow: COMPLETED
 
 I am having an issue with `overflow`.  Here is a link to the output on Github pages: https://mawentowski.github.io/tripane/
 
@@ -119,3 +119,13 @@ The main-row needs a position fixed and takes up 100vh
 but has a top that puts it below the header
 
 
+## Left nav Link coloring
+If `.name container` does not have children, it should be colored using default text #3C4257. If no children, it is light grey. Better to apply the class as well `.unselected-links`.
+
+```CSS
+.name-container:no children {
+    color: #697386;
+    font-weight: 400;
+}
+```
+Right now the menu only expands when you click the tick mark, it should expand when you click the name container next to a tick mark.

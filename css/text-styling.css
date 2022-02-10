@@ -6,6 +6,7 @@
     color: #697386;
     font-weight: 400;
 }
+
 .border-properties {
     border: 0.1px solid #dddddd;
 }
@@ -28,3 +29,26 @@
 
 
 
+h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+h2 {
+    color: #1A1F36;
+    padding-top: 21px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+p {
+    line-height: 26px;
+    font-size: 16px;
+    color: #3C4257;
+    padding-top: 12px 0px 0px;
+}

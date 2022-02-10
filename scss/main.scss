@@ -40,12 +40,13 @@ body {
                     padding: 8px 12px;
                     flex-grow: 1;
                     max-width: 500px;
-                    opacity: 0.8;
                     border-radius: 5px;
                     border: 1px solid rgba(84, 105, 212, 0.5);
-                    font-weight: 490;
-                    line-height: 20px;
+                    opacity: 0.6;
+                    color: #3C4257;
+                    line-height: 15px;
                     font-size: 15px;
+                    font-weight: 400;
                 }
             }
             
@@ -198,13 +199,13 @@ body {
                 input.search-field {
                     font-family: inherit;
                     flex-grow: 1;
-                    opacity: 0.8;
                     border-radius: 5px;
                     border: 1px solid rgba(84, 105, 212, 0.5);
-                    font-weight: 490;
-                    line-height: 20px;
+                    opacity: 0.6;
+                    color: #3C4257;
+                    line-height: 15px;
                     font-size: 15px;
-                    padding: 10px;
+                    font-weight: 400;
                 }
             }
             .left-nav {
@@ -220,7 +221,7 @@ body {
                     align-items: center;
 
                     .svg-container {
-                        width: 20px;
+                        width: 15px;
                         svg {
                             width: 100%;
                         }
@@ -239,13 +240,22 @@ body {
                     margin-left: 16px;
                     // overflow: hidden;
                     > div {
-                        padding: 4px;
                         font-weight: 400;
+                        padding: 7px 0px 1px 0px;
+
+
                     }
                     .name-container {
+                        span {
+                            color: #697386;
+                            font-weight: 400;
+                        }
+
                     }
 
                 }
+
+
                 // collapse class empty, just for toggle
                 .menu-item-group:not(.expanded) * {
                     display: none;
@@ -371,8 +381,9 @@ body {
             font-size: 15px;
             .pre-right-nav {
                 color: #3C4257;
+                font-size: 13px;
                 text-transform: uppercase;
-                padding-bottom: 16px;
+                padding-bottom: 7px;
                 white-space: normal;
                 line-height: 20px;
                 font-weight: 500;
@@ -395,7 +406,10 @@ body {
 
                 a.right-nav-link {
                     color: #697386;
-                    padding: 4px;
+                    font-weight: 400;
+                    padding: 7px 0px 1px 0px;
+                
+
                 }
                 // a.right-nav-link:nth-of-type(1) {
                 //     color: #694386;

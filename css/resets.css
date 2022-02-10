@@ -61,14 +61,14 @@ select
 
 a {
     color: #5469d4;
-    text-decoration: none;.te
+    text-decoration: none;
 }
 
 
 /* Set core body defaults */
 body {
-  display: grid;
-  place-content: center;
+  /* display: grid;
+  place-content: center; */
   min-height: 100vh;
   margin: 0;
   padding: 0;
