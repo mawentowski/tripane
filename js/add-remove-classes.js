@@ -8,18 +8,22 @@ jQuery(document).ready(function($) {
     };
     if (ww <= 767) {
       $('.header').addClass('hidden');
+      $('.main-row').addClass('pos-static');
       $('.left-nav-col').addClass('pos-fixed-top-left');
       $('.left-nav-col').addClass('hidden');
       $('.toc-header').addClass('display-flex');
       $('.header').removeClass('display-flex');
+      $('.main-row').removeClass('pos-fixed');
       $('.left-nav-col').removeClass('display-flex');
       $('.left-nav-col').removeClass('pos-sticky');
     } else if (ww >= 768) {
       $('.header').removeClass('hidden');
+      $('.main-row').removeClass('pos-static');
       $('.left-nav-col').removeClass('pos-fixed-top-left');
       $('.left-nav-col').removeClass('hidden');
       $('.toc-header').removeClass('display-flex');
       $('.header').addClass('display-flex');
+      $('.main-row').addClass('pos-fixed');
       $('.left-nav-col').addClass('display-flex');
       $('.left-nav-col').addClass('pos-sticky');
     };

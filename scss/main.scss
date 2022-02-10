@@ -160,7 +160,6 @@ body {
     }
     .main-row {
         display: flex;
-        position: fixed;
         top: 125px;
         .left-nav-col {
             z-index: 2000;
@@ -206,6 +205,7 @@ body {
                     line-height: 15px;
                     font-size: 15px;
                     font-weight: 400;
+                    padding: 8px;
                 }
             }
             .left-nav {

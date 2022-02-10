@@ -8,6 +8,9 @@
     position: sticky;
     top: 0;
 }
+.pos-static {
+    position: static;
+}
 .pos-fixed {
     position: fixed;
 }
