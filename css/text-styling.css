@@ -1,30 +1,7 @@
-/* Global */
-.primary-color {
-    color: #3C4257;
-}
-.unselected-links {
-    color: #697386;
-    font-weight: 400;
-}
+
 
 .border-properties {
     border: 0.1px solid #dddddd;
-}
-.default-font-properties {
-    line-height: 20px;
-    font-size: 14px;
-    font-weight: 500;
-    white-space:normal;
-}
-
-/* .txt-line-height--20px {
-    line-height: 20px;
-} */
-
-
-/* Tabs */
-.tab-border-bottom-blue {
-    border-bottom: 2px solid #5469d4;
 }
 
 
@@ -32,23 +9,105 @@
 h1 {
     font-size: 32px;
     font-weight: 700;
-    margin: 0;
-    padding: 0;
-    border: 0;
+
 }
 h2 {
     color: #1A1F36;
     padding-top: 21px;
     font-weight: 700;
-    margin: 0;
-    padding: 0;
-    border: 0;
+
 }
 
 
 p {
     line-height: 26px;
     font-size: 16px;
-    color: #3C4257;
     padding-top: 12px 0px 0px;
+    font-weight: 400;
+}
+
+
+body {
+    color: #3C4257;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    white-space:normal;
+}
+
+.main-content {
+    font-size: 16px;
+}
+
+a {
+    color: #5469d4;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1A1F36;
+}
+
+
+.text-black {
+    color:inherit;
+}
+a.text-black:hover {
+    color: #1A1F36;
+}
+
+.left-nav-col a.text-black:hover {
+    color: inherit;
+}
+ 
+.text-gray {
+    color: #697386;
+}
+a.text-gray:hover {
+    color:inherit;
+}
+
+
+/* toggle when select a link from tabs, left-nav (for both black and gray)*/
+.selected-link {
+}
+
+.selected-link:hover {
+    color: #5469d4;
+}
+
+/* when click a tab, toggle this class */
+
+.tab-border-bottom-blue {
+    border-bottom: 2px solid #5469d4;
+}
+
+
+/* activated when you select an item under menu-item group */
+.child-active {
+    font-weight: 700;
+}
+
+
+/* .text-gray:active {
+    color: purple;
+} */
+
+/* color: #3C4257;
+font-weight: 500;
+line-height: 20px;
+font-size: 15px; */
+
+
+
+
+
+input.search-field {
+    opacity: 0.6;        
+    flex-grow: 1;
+    border: 1px solid rgba(84, 105, 212, 0.5);
+    border-radius: 5px;
+    font-family: inherit;
+    font-weight: 400;
+    padding: 8px 12px;
 }

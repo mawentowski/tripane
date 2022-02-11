@@ -129,3 +129,22 @@ If `.name container` does not have children, it should be colored using default 
 }
 ```
 Right now the menu only expands when you click the tick mark, it should expand when you click the name container next to a tick mark.
+
+## Tabs
+The Onclick action to apply styling only is happening on the first tab...
+
+
+
+## Left nav config
+
+### Create elements
+1. Creates `<div>`, as now.
+2. Create an `<a>` element, not a `<span>`, and don't apply any classes yet.
+3. Pass in a URL to be added to `<a>` element.
+
+### Apply Styles
+1. If a `MenuItemModel` is not the child of another `MenuItemModel`, then add the style `text-black` to it.
+5. If a `MenuItemModel` has a parent, then add the class `.text-gray` to it. 
+6. If you click a child, apply the class `.child-active` to the parent.
+7. If you click another child, check to see if the child belongs to the same parent. If it does, no nothing. If it does not, remove the class `.child-active` from the old parent and apply it to the parent of new child.
+

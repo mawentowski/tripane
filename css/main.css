@@ -1,5 +1,4 @@
 html {
-  font-size: 16px;
   font-family: -apple-system , BlinkMacSystemFont , "Segoe UI" , "Roboto" , "Helvetica Neue" , "Ubuntu" , sans-serif; }
 
 @media (max-width: 575px) {
@@ -29,31 +28,15 @@ body {
           box-sizing: content-box;
           padding: 3.3px 0px 3.3px 2px; }
         body .header .header-top .logo-search-col input.search-field {
-          font-family: inherit;
-          margin-left: 15px;
-          padding: 8px 12px;
-          flex-grow: 1;
           max-width: 500px;
-          border-radius: 5px;
-          border: 1px solid rgba(84, 105, 212, 0.5);
-          opacity: 0.6;
-          color: #3C4257;
-          line-height: 15px;
-          font-size: 15px;
-          font-weight: 400; }
+          margin-left: 15px; }
       body .header .header-top .account-col {
         flex-basis: 50%;
-        display: flex;
-        font-weight: 500;
-        line-height: 20px;
-        font-size: 15px; }
+        display: flex; }
         body .header .header-top .account-col .account-col-content {
           margin-left: auto;
           display: flex;
-          align-items: center;
-          font-weight: 500;
-          line-height: 20px;
-          font-size: 15px; }
+          align-items: center; }
           body .header .header-top .account-col .account-col-content a.create-account {
             margin-right: 30px; }
           body .header .header-top .account-col .account-col-content form button {
@@ -73,8 +56,6 @@ body {
         flex-grow: 1; }
         body .header .header-bottom .content-tabs .tab {
           padding: 10px 0px 10px;
-          border: 2px solid transparent;
-          background: transparent;
           margin-right: 20px; }
       body .header .header-bottom .apis-support {
         display: flex;
@@ -83,23 +64,12 @@ body {
         body .header .header-bottom .apis-support .apids-dropdown {
           margin-right: 30px; }
           body .header .header-bottom .apis-support .apids-dropdown form label {
-            margin-right: 7px;
-            line-height: 20px;
-            font-size: 14px;
-            font-weight: 500; }
-          body .header .header-bottom .apis-support .apids-dropdown form select {
-            line-height: 20px;
-            font-size: 14px;
-            font-weight: 500; }
+            margin-right: 7px; }
   body .menu-icon-row {
     display: flex;
     max-width: 100vw;
     padding: 22px 25px 22px 25px;
-    background-color: #F7FAFC;
-    color: #3C4257;
-    font-weight: 500;
-    line-height: 20px;
-    font-size: 15px; }
+    background-color: #F7FAFC; }
     body .menu-icon-row .toc-menu {
       border-radius: 4px; }
       body .menu-icon-row .toc-menu i.fa.fa-bars {
@@ -115,19 +85,12 @@ body {
     body .main-row .left-nav-col {
       z-index: 2000;
       border-right: 0.1px solid #dddddd;
-      line-height: 20px;
-      font-size: 15px;
-      font-weight: 500;
       background-color: white; }
       body .main-row .left-nav-col .toc-header {
         max-width: 100%;
         display: flex;
         padding: 22px 25px 22px 25px;
-        background-color: #F7FAFC;
-        color: #3C4257;
-        font-weight: 500;
-        line-height: 20px;
-        font-size: 15px; }
+        background-color: #F7FAFC; }
         body .main-row .left-nav-col .toc-header .toc-header-cancel {
           margin-left: auto;
           width: 10%;
@@ -137,17 +100,6 @@ body {
         padding-right: 25px;
         padding-left: 25px;
         margin-top: 20px; }
-        body .main-row .left-nav-col .toc-filter-row input.search-field {
-          font-family: inherit;
-          flex-grow: 1;
-          border-radius: 5px;
-          border: 1px solid rgba(84, 105, 212, 0.5);
-          opacity: 0.6;
-          color: #3C4257;
-          line-height: 15px;
-          font-size: 15px;
-          font-weight: 400;
-          padding: 8px; }
       body .main-row .left-nav-col .left-nav {
         padding-left: 14px;
         padding-right: 25px;
@@ -172,9 +124,6 @@ body {
           body .main-row .left-nav-col .left-nav .menu-item-group > div {
             font-weight: 400;
             padding: 7px 0px 1px 0px; }
-          body .main-row .left-nav-col .left-nav .menu-item-group .name-container span {
-            color: #697386;
-            font-weight: 400; }
         body .main-row .left-nav-col .left-nav .menu-item-group:not(.expanded) * {
           display: none; }
       body .main-row .left-nav-col .dl-pdf-row {
@@ -237,17 +186,12 @@ body {
       top: 160px;
       width: 17%;
       padding: 5px;
-      flex-direction: column;
-      line-height: 20px;
-      font-size: 15px; }
+      flex-direction: column; }
       body .main-row .right-nav-col .pre-right-nav {
-        color: #3C4257;
         font-size: 13px;
         text-transform: uppercase;
         padding-bottom: 7px;
-        white-space: normal;
-        line-height: 20px;
-        font-weight: 500; }
+        white-space: normal; }
       body .main-row .right-nav-col .right-nav {
         display: flex;
         flex-direction: column; }
@@ -263,6 +207,18 @@ body {
         body .main-row .right-nav-col .right-nav a.right-nav-link {
           color: #697386;
           font-weight: 400;
-          padding: 7px 0px 1px 0px; }
+          padding: 7px 0px 1px 0px;
+          font-size: 14px; }
+
+.main-content .document-footer .footer-bottom .footer-col:nth-of-type(2) input.search-field {
+  font-family: inherit;
+  margin-left: 15px;
+  padding: 8px 12px;
+  flex-grow: 1;
+  max-width: 500px;
+  border-radius: 5px;
+  border: 1px solid rgba(84, 105, 212, 0.5);
+  opacity: 0.6;
+  font-weight: 400; }
 
 /*# sourceMappingURL=main.css.map */
