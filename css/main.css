@@ -266,7 +266,7 @@ body {
   position: absolute;
   width: 6px;
   height: 6px;
-  left: -22px;
+  left: -17px;
   top: 10px;
   border-radius: 50%;
   background: #83c9d2; }
@@ -275,7 +275,7 @@ body {
   position: absolute;
   width: 6px;
   height: 6px;
-  left: -22px;
+  left: -17px;
   top: 10px;
   border-radius: 50%;
   border: 1.5px solid #83c9d2; }
@@ -359,7 +359,7 @@ body {
   position: absolute;
   width: 12px;
   height: 12px;
-  left: -22px;
+  left: -17px;
   top: 10px;
   background: url(../images/checkmark.svg);
   background-repeat: no-repeat;
@@ -380,7 +380,7 @@ body {
   position: absolute;
   width: 12px;
   height: 12px;
-  left: -22px;
+  left: -17px;
   top: 8px;
   background: url(../images/continue-link.svg);
   background-repeat: no-repeat;
