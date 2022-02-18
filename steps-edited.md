@@ -137,6 +137,13 @@ Viewport 100vh is cutting off bottom because its taking into account the top bar
 Need to set height of #content equal to Window.innerHeight.
 <https://developer.mozilla.org/en-US/docs/Web/API/Window/innerHeight>
 
+## Minor Tweaks
+
+Make the drop-down links to API reference, not version. Think of other things to link to.
+Move version selector to left nav
+Add that PDF row at bottom at all times
+Add more to left nav, turn on overflow y.
+
 # Issues
 
 ## Overflow: COMPLETED

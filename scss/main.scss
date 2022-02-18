@@ -224,7 +224,7 @@ body {
     @media (min-width: 576px) {
       .left-nav-col {
         width: 400px;
-        // height: 100vh;
+        height: 100vh;
       }
     }
     @media (min-width: 768px) {
@@ -277,7 +277,7 @@ body {
       .content {
         flex: 0 0 100%;
         max-width: 100%;
-        height: 100vh;
+        height: 90vh;
       }
     }
 
@@ -460,13 +460,17 @@ body {
       font-weight: 400;
       padding: 12px 20px 12px 20px;
       margin-bottom: 10px;
+
+      .information-block-text {
+      }
+      //   .footer-lines {
+      //   }
+
       i {
         color: rgb(135, 146, 162);
         font-size: 14px;
         margin-right: 7px;
         padding-top: 2px;
-      }
-      .information-block-text {
       }
     }
     h3 {
@@ -562,11 +566,10 @@ body {
       position: absolute;
       width: 12px;
       height: 12px;
-      left: -17px;
+      left: -21px;
       top: 10px;
       background: url(../images/checkmark.svg);
       background-repeat: no-repeat;
-      color: red;
     }
 
     h2.continued-reading {
@@ -575,14 +578,19 @@ body {
       color: #1a1f36;
       font-size: 20px;
     }
-    ul.continue-link-list {
-      list-style: none;
-
-      li {
-        position: relative;
-        font-size: 16px;
-        line-height: 26px;
-        a {
+    .continue-link-list {
+      display: flex;
+      flex-direction: column;
+      //   align-items: center;
+      .continue-link-row {
+        display: flex;
+        align-items: flex-end;
+        .svg-container {
+          width: 3%;
+          // vertical-align: middle;
+          margin-right: 13px;
+          svg {
+          }
         }
       }
     }
@@ -604,8 +612,10 @@ body {
   .document-footer {
     margin-top: 80px;
     align-items: center;
+
     .rating-section {
       display: flex;
+      padding: 24px 0px;
       h2.rating-question {
         font-weight: 600;
         color: #1a1f36;
@@ -634,12 +644,78 @@ body {
       }
     }
     .footer-bottom {
+      display: flex;
+      padding: 32px 0px;
+      margin-top: 20px;
+      border-top: 0.1px solid #dddddd;
+      //   justify-content: space-between;
+      p {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+      }
       .footer-col:nth-of-type(1) {
-        div {
+        margin-right: 20px;
+        ul.footer-lines {
+          list-style: none;
+          padding-left: 1rem !important;
+          li {
+            position: relative;
+            font-size: 16px;
+            line-height: 26px;
+            padding-left: 10px;
+            margin-bottom: 5px;
+
+            a {
+            }
+          }
+        }
+        ul.footer-lines > li:nth-of-type(1)::before {
+          content: "";
+          position: absolute;
+          width: 6px;
+          height: 6px;
+          left: -17px;
+          top: 5px;
+          background-image: url("../images/svgs/email.svg");
+          background-repeat: no-repeat;
+          background-size: 16px 16px;
+          height: 16px;
+          width: 16px;
+        }
+        ul.footer-lines > li:nth-of-type(2)::before {
+          content: "";
+          position: absolute;
+          width: 6px;
+          height: 6px;
+          left: -20px;
+          top: 0px;
+          background-image: url("../images/svgs/video.svg");
+          background-repeat: no-repeat;
+          background-size: 23px 23px;
+          height: 23px;
+          width: 23px;
+        }
+        ul.footer-lines > li:nth-of-type(3)::before {
+          content: "";
+          position: absolute;
+          width: 6px;
+          height: 6px;
+          left: -17px;
+          top: 3px;
+          background-image: url("../images/svgs/page.svg");
+          background-repeat: no-repeat;
+          background-size: 20px 18px;
+          height: 20px;
+          width: 18px;
         }
       }
       .footer-col:nth-of-type(2) {
-        div {
+        flex-basis: 65%;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+          "Helvetica Neue", "Ubuntu", sans-serif;
+        div:nth-of-type(1) {
+          margin-bottom: 10px;
         }
         input.search-field {
           font-family: inherit;
@@ -651,6 +727,18 @@ body {
           border: 1px solid rgba(84, 105, 212, 0.5);
           opacity: 0.6;
           font-weight: 400;
+          width: 100%;
+          margin-left: 0;
+
+          font-size: 13px;
+          text-align: right;
+        }
+        .subscribe {
+          padding-top: 4px;
+          font-size: 12px;
+          line-height: 15px;
+          font-weight: 400;
+          color: #697386;
         }
       }
     }
