@@ -7,7 +7,7 @@ jQuery(document).ready(function ($) {
       $(".left-nav-col").removeClass("fit-viewport");
     }
     if (ww <= 767) {
-      $("body").addClass("unscrollable");
+      //   $("body").addClass("unscrollable");
       $(".header").addClass("hidden");
       $(".main-row").addClass("pos-static");
       $(".left-nav-col").addClass("pos-fixed-top-left");
@@ -18,7 +18,7 @@ jQuery(document).ready(function ($) {
       $(".left-nav-col").removeClass("display-flex");
       $(".left-nav-col").removeClass("pos-sticky");
     } else if (ww >= 768) {
-      $("body").removeClass("unscrollable");
+      //   $("body").removeClass("unscrollable");
       $(".header").removeClass("hidden");
       $(".main-row").removeClass("pos-static");
       $(".left-nav-col").removeClass("pos-fixed-top-left");

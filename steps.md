@@ -139,6 +139,7 @@ Need to set height of #content equal to Window.innerHeight.
 
 ## Minor Tweaks
 
+Add you email newsletter from techwritex, then configure it properly with the input field for label for.
 Make the drop-down links to API reference, not version. Think of other things to link to.
 Move version selector to left nav
 Add that PDF row at bottom at all times
